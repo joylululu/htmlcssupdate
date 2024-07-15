@@ -1,0 +1,484 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  font-family: "Noto Sans", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3b3b3b;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  height: 460px;
+  background: #fafafa;
+  justify-content: center;
+}
+
+.quote {
+  position: relative;
+  display: inline-block;
+  width: 52%;
+  font-size: 24px;
+}
+
+.quote-text {
+  display: inline-block;
+}
+
+.icon1 {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  top: -65px;
+  left: -55px;
+}
+
+.icon2 {
+  transform: rotate(-180deg);
+  display: inline-block;
+  float: right;
+  position: absolute;
+  bottom: -55px;
+  right: -65px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu li {
+  margin-right: 20px;
+  display: block;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.slider-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.slider-content h2 {
+  color: #5B5B5B;
+}
+
+.slider li {
+  padding: 20px;
+  width: calc(35% - 12px);
+}
+
+.slider-line {
+  width: 10%;
+  border: 2px solid #C1C1C1
+}
+
+.main {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.worklist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.worklist li {
+  margin: 16px 0 16px 0px;
+}
+
+.card {
+  width: calc(50% - 12px);
+  max-width: 1000px;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 10px 0 10px 10px;
+}
+
+.card span {
+  display: inline-block;
+  padding: 4px 12px 4px 12px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  margin-left: 8px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #919191;
+  margin: 10px 0 10px 10px;
+}
+
+.card img {
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+.pagination a:hover {
+  color: #fff;
+  background: black;
+  border-radius: 4px;
+  padding: 2px 13px 2px 13px;
+}
+
+.footer {
+  background-image: url(https://i.imgur.com/BEdar6U.gif);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.contact {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+.contact-email {
+  margin-top: 24px;
+  color: #919191;
+}
+
+.about {
+  height: auto;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.about li {
+  border: 1px solid #C1C1C1;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.about li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 4px 24px 4px 24px;
+  border-radius: 8px;
+}
+
+.about li a:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.about h3 {
+  width: 80%;
+  text-align: left;
+}
+
+.list a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {}
+
+
+
+
+
+@media (max-width:767px) {
+  .header {
+    padding: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .icon1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+  }
+
+  .icon2 {
+    display: none;
+  }
+
+  .header-section {
+    justify-content: center;
+  }
+
+  .slider-content {
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .slider {
+    width: 48%;
+    margin: auto;
+  }
+
+  .slider li {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .worklist {
+    justify-content: center;
+    margin: 48px 0 48px 0px;
+  }
+
+  .card {
+    width: calc(100% - 12px);
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url(https://i.imgur.com/BEdar6U.gif);
+    background-size: cover;
+  }
+
+  .about h3 {
+    text-align: center;
+    width: calc(50%, -42px);
+  }
+
+  .footer-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #menu {
+    display: none;
+  }
+
+}
